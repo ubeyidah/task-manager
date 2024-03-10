@@ -18,7 +18,7 @@ const tabsEl = document.querySelector('.js-tabs');
 let taskLeng = tasks.length;
 let catagory;
 let isNewTask = false;
-console.log(isNewTask);
+
 
 // new task page
 addTaskBtnOpen.addEventListener('click', () => {
@@ -27,13 +27,12 @@ addTaskBtnOpen.addEventListener('click', () => {
   titleEl.style.borderColor = 'rgba(0, 76, 255, 0.72)';
   headerText.textContent = 'New Task';
   isNewTask = true;
-  console.log(isNewTask);
 })
 taskPageCancelBtn.addEventListener('click', () => {
   addTaskPage.classList.remove('new-task');
   clearInputs();
   isNewTask = false;
-  console.log(isNewTask);
+
 })
 
 function task() {
@@ -283,7 +282,6 @@ tabsEl.addEventListener('click', (e) => {
     } else if (tabValue == task.catagory) {
       return true;
     } else if (tabValue == 'Today') {
-      console.log(task.date == today, task.date, today);
       return task.date == today;
 
     }
