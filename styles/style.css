@@ -310,11 +310,12 @@ header .links span.active {
 .view-infos h2 {
   text-decoration: underline;
   margin-bottom: 20px;
+  text-align: center;
 }
 .view-infos p {
   color: #181818;
   font-size: 18px;
-  text-align: center;
+  text-align: start;
 }
 .view-date {
   display: flex;
