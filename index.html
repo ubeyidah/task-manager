@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task app</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="shortcut icon" href="public/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="title">TASK MANAGER</div>
+        <div class="header-action">
+          <span class="ratio">
+            <span class="js-ratio-display">0/0</span> Completed
+          </span>
+          <button class="add-task-btn btn js-add-task-btn">Add Tasks</button>
+        </div>
+        <div class="links js-links">
+          <span class="active btn js-tab">All</span>
+          <span class="btn js-tab">Todays</span>
+          <span class="btn js-tab">Completed</span>
+          <span class="btn js-tab">Active</span>
+        </div>
+      </header>
+      <section class="todo-lists-grid js-todos"></section>
+      <section class="js-new-page-container"></section>
+    </main>
+    <script src="./script/dayjs.min.js"></script>
+    <script src="./script/index.js" type="module"></script>
+  </body>
+</html>
