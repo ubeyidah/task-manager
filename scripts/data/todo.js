@@ -1,4 +1,4 @@
-import notification from "../utils/alert";
+import notification from "../utils/alert.js";
 
 class Todo {
   todos;

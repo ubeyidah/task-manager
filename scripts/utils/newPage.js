@@ -11,4 +11,3 @@ export class NewPage {
     document.querySelector(".js-new-page").classList.add("open");
   }
 }
-console.log(8);
