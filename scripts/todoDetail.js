@@ -1,5 +1,6 @@
 import { todoObj } from "./data/todo.js";
 import { renderTodoHTML } from "./todoHTML.js";
+import { updateTodo } from "./updateTodo.js";
 import { NewPage } from "./utils/newPage.js";
 
 const page = new NewPage();
@@ -77,6 +78,14 @@ export function renderNewPageView(todoId) {
       todoObj.displayCompletedRatio(
         document.querySelector(".js-ratio-display")
       );
+    });
+  });
+  // update
+  document.querySelectorAll(".js-update-btn").forEach((updateLink) => {
+    updateLink.addEventListener("click", () => {
+      const { todoId } = updateLink.dataset;
+      page.close();
+      updateTodo(todoId);
     });
   });
 }
