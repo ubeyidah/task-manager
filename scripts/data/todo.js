@@ -1,3 +1,5 @@
+import notification from "../utils/alert";
+
 class Todo {
   todos;
   #localStorageKey;
