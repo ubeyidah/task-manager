@@ -16,11 +16,14 @@ export function renderTodoHTML(array = todoObj.todos) {
     const isChecked = todo.isCompleted ? "is-completed" : " ";
     html += `
     <div class="todo ${isChecked} ">
-    <div class="check-box js-check-box" data-todo-id="${todo.id}"></div>
     <div class="todo-texts">
-      <h3 class="info">${todo.todoTitle}</h3>
+    <div class="check">
+    <div class="check-box js-check-box" data-todo-id="${todo.id}"></div></div>
+    <div>
+    <h3 class="info">${todo.todoTitle}</h3>
       <p class="info">${todo.todoDescription}</p>
       <p class="info">for: ${dateString}</p>
+      </div>
     </div>
     <div class="actions">
       <button data-todo-id="${todo.id}" class="delete-btn js-delete-btn">
