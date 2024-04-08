@@ -14,7 +14,7 @@ I created this web app with the concept of
 - Coplete
 
 For more:
-<a href="https://ubeyidah.github.io/task-manager/" target="_blank">live Demo<a>
+<a href="https://3task.netlify.app/" target="_blank">live Demo<a>
 
 ## screenshots
 ![Screenshot 2024-04-08 135710](https://github.com/ubeyidah/task-manager/assets/159727076/7487edb8-8b3e-490a-9439-27c2fbe8e647)
